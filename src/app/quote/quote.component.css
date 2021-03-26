@@ -1,5 +1,17 @@
-* {
-    box-sizing: border-box;
+body {
+    background: #92bde7;
+    color: #485e74;
+    line-height: 1.6;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1em;
+    font-size: 16px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #ffffff;
 }
   
 
