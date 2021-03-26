@@ -19,6 +19,7 @@
                         <li>
                             <p class="head"> A quote posted by 
                                 <span class="name">{{quote.name}}</span> on {{quote.datePosted|date}}
+                                <button (click)='toggleQuote(i)' id="quotesButton">See More</button>
                             </p>
                             <p data-wow-delay="1s" appHighlight *ngIf="highestUpvote()===quote.upvotes && quote.upvotes>0">
                                 {{quote.quote}}
@@ -26,7 +27,7 @@
                             <p data-wow-delay="1s" *ngIf="highestUpvote()!==quote.upvotes || quote.upvotes===0">
                                 {{quote.quote}}
                             </p>
-                            <button (click)='toggleQuote(i)'>See More</button>
+                            
                             <button (click)="upvote(i)">Upvote</button>
                             <button (click)="downvote(i)">Downvote</button>
                                 <app-quote-details *ngIf='quote.showDetails' [quote]='quote' (toDelete)='deleteThis($event, i)'></app-quote-details>

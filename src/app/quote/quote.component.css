@@ -28,5 +28,26 @@ h1{
 .head{
     color: #0088cc;
 }
+
+button{
+    height: 38px;
+    border: 0;
+    padding: 0 20px 0 20px;
+    font-weight: bold;
+}
+
+#quotesButton{
+    margin-left: 30px;
+    background-color: #0088cc;
+    color: #ffffff;
+    border-radius: 20px;
+    opacity: 1;
+}
+
+#quotesButton:hover{
+    opacity: 0.5;
+    transition: 1.3s;
+    color: #000000;
+}
   
 

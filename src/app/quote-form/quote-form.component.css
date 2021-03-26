@@ -20,6 +20,7 @@ button{
     border: 0;
     padding: 0 20px 0 20px;
     font-weight: bold;
+    border-radius: 20px;
 }
 
 button:hover,
