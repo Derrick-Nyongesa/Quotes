@@ -10,8 +10,8 @@
     <div>
         <h1>Best Quotes About Life </h1>
         <ul>
-            <li *ngFor='let quote of quotes'> A quote posted by
-                {{quote.name}}
+            <li *ngFor='let quote of quotes'> A quote posted by 
+                <span class="name">{{quote.name}}</span>
                 <app-quote-details [quote]='quote'></app-quote-details>
             </li>
         </ul>
