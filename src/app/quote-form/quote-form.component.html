@@ -7,9 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="form-area">
         <h2 class="text-center">Create your own Quote</h2>
-        <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+        <form (ngSubmit)='submitQuote()' #quoteForm='ngForm' id="form">
             <div class="form-group">
                 <label for="name">Name</label><br>
                 <input type="text" class="form-control" id="name" placeholder="Enter your Name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required>
