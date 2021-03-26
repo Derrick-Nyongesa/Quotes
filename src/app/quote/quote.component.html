@@ -11,7 +11,8 @@
         <h1>Best Quotes About Life </h1>
         <ul>
             <li *ngFor='let quote of quotes'> A quote posted by
-                {{quote.name}} 
+                {{quote.name}}
+                <app-quote-details [quote]='quote'></app-quote-details>
             </li>
         </ul>
     </div>
