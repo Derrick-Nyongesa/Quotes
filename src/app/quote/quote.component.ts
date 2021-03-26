@@ -26,7 +26,7 @@ export class QuoteComponent implements OnInit {
   }
 
   toggleQuote(index){
-    this.quotes[index].showQuote =! this.quotes[index].showQuote;
+    this.quotes[index].showDetails =! this.quotes[index].showDetails;
   }
 
   deleteThis(toDelete, index){
@@ -38,7 +38,6 @@ export class QuoteComponent implements OnInit {
       }
     }
   }
-
   constructor() { }
 
   ngOnInit(): void {
