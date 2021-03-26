@@ -15,7 +15,7 @@
                     <span class="name">{{quote.name}}</span>
                 </li>
                 <button (click)='toggleQuote(i)'>See the Quote</button>
-                    <app-quote-details *ngIf='quote.showQuote' [quote]='quote'></app-quote-details>
+                    <app-quote-details *ngIf='quote.showQuote' [quote]='quote' (toDelete)='deleteThis($event, i)'></app-quote-details>
             </div>   
         </ul>
     </div>
