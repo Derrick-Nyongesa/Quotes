@@ -7,12 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <p> This Quote is from {{quote.author}}</p>
-    <p>Posted {{quote.datePosted|timePassed}} days ago.</p>
-    <p>Upvotes:{{quote.upvotes}}</p>
-    <p>Downvotes:{{quote.downvotes}}</p>
-    <button (click)='deleteQuote(true)'>Delete this Quote</button>
-    
+    <div id="details">
+        <p class="head">This Quote is from <span class="name">{{quote.author}}</span></p>
+        <p>Posted {{quote.datePosted|timePassed}} days ago.</p>
+        <p>Upvotes:<span class="name">{{quote.upvotes}}</span></p>
+        <p>Downvotes:<span class="name">{{quote.downvotes}}</span></p>
+        <button (click)='deleteQuote(true)'>Delete this Quote</button>
+    </div>
     
 </body>
 </html>
