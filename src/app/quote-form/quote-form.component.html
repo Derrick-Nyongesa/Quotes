@@ -9,7 +9,7 @@
 <body>
     <div>
         <h1>Create your own Quote</h1>
-        <form #quoteForm='ngForm'>
+        <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
             <div>
                 <label for="name">Name</label>
                 <input type="text" id="name" placeholder="Enter your Name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required>

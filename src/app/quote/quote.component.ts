@@ -18,6 +18,13 @@ export class QuoteComponent implements OnInit {
     new Quote(8, 'Waiyaki', 'IA lot of people give up just before they’re about to make it. You know you never know when that next obstacle is going to be the last one.', 'Cuck Norris', new Date(2021,2,3)),
   ];
 
+  addNewQuote(quote){
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength + 1;
+    quote.datePosted = new Date(quote.datePosted)
+    this.quotes.push(quote)
+  }
+
   toggleQuote(index){
     this.quotes[index].showQuote =! this.quotes[index].showQuote;
   }
