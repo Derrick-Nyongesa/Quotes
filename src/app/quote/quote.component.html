@@ -12,7 +12,7 @@
         <ul>
             <div *ngFor='let quote of quotes; let i=index'>
                 <li> A quote posted by 
-                    <span class="name">{{quote.name}}</span>
+                    <span class="name">{{quote.name}}</span> on {{quote.datePosted|date}}
                 </li>
                 <button (click)='toggleQuote(i)'>See the Quote</button>
                     <app-quote-details *ngIf='quote.showQuote' [quote]='quote' (toDelete)='deleteThis($event, i)'></app-quote-details>
