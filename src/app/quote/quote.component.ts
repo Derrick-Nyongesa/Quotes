@@ -15,6 +15,10 @@ export class QuoteComponent implements OnInit {
     new Quote(5, 'Vanessa', 'Many of life’s failures are people who did not realize how close they were to success when they gave up.', 'Thomas A. Edison'),
   ];
 
+  toggleQuote(index){
+    this.quotes[index].showQuote =! this.quotes[index].showQuote;
+  }
+
   constructor() { }
 
   ngOnInit(): void {
