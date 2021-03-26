@@ -9,6 +9,7 @@
 <body>
     <p>{{quote.quote}}</p>
     <p> ~ {{quote.author}}</p>
+    <p>This quote was posted {{quote.datePosted|timePassed}} days ago.</p>
     <button (click)='deleteQuote(true)'>Delete this Quote</button>
 </body>
 </html>
