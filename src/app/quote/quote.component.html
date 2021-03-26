@@ -11,13 +11,18 @@
         <h1>Best Quotes About Life </h1>
         <ul>
             <div *ngFor='let quote of quotes; let i=index'>
-                <li > A quote posted by 
+                <li> A quote posted by 
                     <span class="name">{{quote.name}}</span> on {{quote.datePosted|date}}
                 </li>
-                <p>{{quote.quote}}</p>
+                <p class="h3 h3-responsive font-bold wow fadeInLeft" data-wow-delay="1s" appHighlight *ngIf="highestUpvote()===quote.upvotes && quote.upvotes>0">
+                    {{quote.quote}}
+
+                  </p>
+                   <p class="h3 h3-responsive font-bold wow fadeInLeft" data-wow-delay="1s" *ngIf="highestUpvote()!==quote.upvotes || quote.upvotes===0">{{quote.quote}}
+                   </p>
                 <button (click)='toggleQuote(i)'>See More</button>
-                <button>Upvote</button>
-                <button>Downvote</button>
+                <button (click)="upvote(i)">Upvote</button>
+                <button (click)="downvote(i)">Downvote</button>
                     <app-quote-details *ngIf='quote.showDetails' [quote]='quote' (toDelete)='deleteThis($event, i)'></app-quote-details>
             </div>   
         </ul>
