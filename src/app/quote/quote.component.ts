@@ -8,7 +8,7 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
-    new Quote(1, 'Derrick', 'Many of life’s failures are people who did not realize how close they were to success when they gave up.', 'Thomas A. Edison', new Date(2021,2,26)),
+    new Quote(1, 'Derrick', 'Many of life’s failures are people who did not realize how close they were to success when they gave up.', 'Thomas A. Edison', new Date(2021,2,25)),
     new Quote(2, 'Daniel', 'Life is what happens when you’re busy making other plans.', 'John Lennon', new Date(2021,2,27)),
     new Quote(3, 'Maria', 'The purpose of our lives is to be happy.', 'Dalai Lama', new Date(2021,2,22)),
     new Quote(4, 'Nico', 'Get busy living or get busy dying.', 'Stephen King', new Date(2021,1,18)),
