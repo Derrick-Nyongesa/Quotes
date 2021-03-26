@@ -8,12 +8,12 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
-    {id:1, name:'Derrick', quote:'Many of life’s failures are people who did not realize how close they were to success when they gave up.', author:'Thomas A. Edison'},
-    {id:2, name:'Daniel', quote:'Life is what happens when you’re busy making other plans.', author:'John Lennon'},
-    {id:3, name:'Maria', quote:'The purpose of our lives is to be happy.', author:'Dalai Lama'},
-    {id:4, name:'Nico', quote:'Get busy living or get busy dying.', author:'Stephen King'},
-    {id:5, name:'Vanessa', quote:'Many of life’s failures are people who did not realize how close they were to success when they gave up.', author:'Thomas A. Edison'},
-  ]
+    new Quote(1, 'Derrick', 'Many of life’s failures are people who did not realize how close they were to success when they gave up.', 'Thomas A. Edison'),
+    new Quote(2, 'Daniel', 'Life is what happens when you’re busy making other plans.', 'John Lennon'),
+    new Quote(3, 'Maria', 'The purpose of our lives is to be happy.', 'Dalai Lama'),
+    new Quote(4, 'Nico', 'Get busy living or get busy dying.', 'Stephen King'),
+    new Quote(5, 'Vanessa', 'Many of life’s failures are people who did not realize how close they were to success when they gave up.', 'Thomas A. Edison'),
+  ];
 
   constructor() { }
 
