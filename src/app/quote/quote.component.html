@@ -28,8 +28,8 @@
                                 {{quote.quote}}
                             </p>
                             
-                            <button (click)="upvote(i)">Upvote</button>
-                            <button (click)="downvote(i)">Downvote</button>
+                            <button (click)="upvote(i)" id="upvotes">Upvote</button>
+                            <button (click)="downvote(i)" id="downvotes">Downvote</button>
                                 <app-quote-details *ngIf='quote.showDetails' [quote]='quote' (toDelete)='deleteThis($event, i)'></app-quote-details>
                         </li>
                     </ul>
